@@ -69,10 +69,10 @@ After each successful email, the corresponding supplier is automatically marked 
 ## Screenshots
 
 ### EMAIL Execution Sheet
-![EMAIL Execution](screenshots/email-execution.png)
+![EMAIL Execution](screenshots/email-execution-list.png)
 
 ### Email Generation
-![Email Generation](screenshots/email-preview.png)
+![Email Generation](screenshots/email-output.png)
 
 ### Summary Tracking
-![Summary Tracking](screenshots/summary-tracking.png)
+![Summary Tracking](screenshots/summary.png)
