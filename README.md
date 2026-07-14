@@ -1,4 +1,3 @@
-```markdown
 # Sales Report & Post-Report Tracking Automation (Google Apps Script)
 
 This project showcases enhancements made to an existing Google Apps Script used for supplier sales report distribution. My contribution focused on automating the post-report tracking process by updating the reporting status after successful email delivery, reducing manual administrative work and improving reporting accuracy.
@@ -11,18 +10,18 @@ This project showcases enhancements made to an existing Google Apps Script used 
 
 I enhanced the existing automation by:
 
-- Automatically updating the **Summary** sheet after successful email delivery.
-- Eliminating the need for manual report tracking.
-- Maintaining a centralized report execution tracker to improve visibility of completed reports.
+* Automatically updating the **Summary** sheet after successful email delivery.
+* Eliminating the need for manual report tracking.
+* Maintaining a centralized report execution tracker to improve visibility of completed reports.
 
 ---
 
 ## Features
 
-- Automatically records successful email delivery in the tracking sheet.
-- Eliminates manual report tracking.
-- Maintains a centralized report execution tracker.
-- Improves reporting accuracy and consistency.
+* Automatically records successful email delivery in the tracking sheet.
+* Eliminates manual report tracking.
+* Maintains a centralized report execution tracker.
+* Improves reporting accuracy and consistency.
 
 ---
 
@@ -40,8 +39,9 @@ I enhanced the existing automation by:
 1. Open Google Sheets → **Extensions** → **Apps Script**.
 2. Paste the script into `Code.gs`.
 3. Ensure the following sheets exist:
-   - `EMAIL Execution`
-   - `Summary`
+
+   * `EMAIL Execution`
+   * `Summary`
 4. Enter the reporting period in cell `H1`.
 5. Run `sendEmails()`.
 
@@ -55,12 +55,12 @@ The automation automatically updates the **Summary** sheet after each successful
 
 ## Technical Highlights
 
-- Google Apps Script
-- Google Sheets Automation
-- GmailApp
-- SpreadsheetApp
-- Spreadsheet Data Processing
-- Automated Status Tracking
+* Google Apps Script
+* Google Sheets Automation
+* GmailApp
+* SpreadsheetApp
+* Spreadsheet Data Processing
+* Automated Status Tracking
 
 ---
 
@@ -83,4 +83,3 @@ Supplier sales report emails are generated and sent through the existing automat
 After each successful email, the corresponding supplier is automatically marked as **YES** in the **Summary** sheet, eliminating manual tracking.
 
 ![Summary Tracking](screenshots/summary.png)
-```
