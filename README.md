@@ -1,78 +1,86 @@
+```markdown
 # Sales Report & Post-Report Tracking Automation (Google Apps Script)
 
-A Google Apps Script automation solution that streamlines the supplier sales reporting process. The script generates personalized sales report emails, distributes report links to suppliers, and automatically updates a tracking sheet to monitor report delivery status.
+This project showcases enhancements made to an existing Google Apps Script used for supplier sales report distribution. My contribution focused on automating the post-report tracking process by updating the reporting status after successful email delivery, reducing manual administrative work and improving reporting accuracy.
+
+> **Note:** The supplier email generation and distribution workflow was part of an existing automation. This project highlights my enhancements to the post-report tracking process.
+
+---
+
+## My Contribution
+
+I enhanced the existing automation by:
+
+- Automatically updating the **Summary** sheet after successful email delivery.
+- Eliminating the need for manual report tracking.
+- Maintaining a centralized report execution tracker to improve visibility of completed reports.
 
 ---
 
 ## Features
 
-- Automates supplier sales report distribution
-- Generates dynamic email subjects and content
-- Supports multiple CC recipients
-- Inserts supplier-specific report links into emails
-- Automatically updates report delivery status
-- Reduces manual reporting and email preparation
-- Maintains a centralized tracking sheet for report execution
+- Automatically records successful email delivery in the tracking sheet.
+- Eliminates manual report tracking.
+- Maintains a centralized report execution tracker.
+- Improves reporting accuracy and consistency.
 
 ---
 
 ## Workflow
 
-1. Reads supplier information from the **EMAIL Execution** sheet.
-2. Retrieves the reporting period from the spreadsheet.
-3. Generates personalized email subjects and content.
-4. Sends sales report emails to suppliers with CC recipients.
-5. Includes a direct link to each supplier's sales report.
-6. Updates the **Summary** sheet by marking successfully sent reports as **YES**.
+1. An existing automation sends personalized sales report emails to suppliers.
+2. After each successful email delivery, the supplier name is identified.
+3. The corresponding supplier is automatically marked as **YES** in the **Summary** sheet.
+4. The updated tracking sheet provides a centralized record of completed report distribution.
 
 ---
 
 ## Setup
 
-1. Open Google Sheets → **Extensions** → **Apps Script**
-2. Paste the script into `Code.gs`
+1. Open Google Sheets → **Extensions** → **Apps Script**.
+2. Paste the script into `Code.gs`.
 3. Ensure the following sheets exist:
    - `EMAIL Execution`
    - `Summary`
-4. Populate the **EMAIL Execution** sheet with supplier details.
-5. Enter the reporting period in cell `H1`.
-6. Run `sendEmails()`.
+4. Enter the reporting period in cell `H1`.
+5. Run `sendEmails()`.
 
 ---
 
-## Email Execution Structure
+## Summary Tracking
 
-The EMAIL Execution sheet contains supplier email information and report links. Screenshot below shows a sample structure for reference.
-
-| Email | CC Email | Supplier Name | Sales Report Link |
-|-------|----------|---------------|-------------------|
-| supplier@email.com | cc@email.com | Supplier A | https://... |
+The automation automatically updates the **Summary** sheet after each successful email, replacing a manual tracking process with an automated status update.
 
 ---
 
-## Summary Sheet
+## Technical Highlights
 
-After each successful email, the corresponding supplier is automatically marked as **YES** in the **Summary** sheet to indicate that the sales report has been sent.
-
----
-
-## Notes
-
-- Supplier names are matched against the **Summary** sheet.
-- Email subject includes the reporting period and supplier name.
-- Supports multiple CC recipients.
-- Sales report links are dynamically inserted into each email.
-- Successfully processed suppliers are highlighted automatically in the tracking sheet.
+- Google Apps Script
+- Google Sheets Automation
+- GmailApp
+- SpreadsheetApp
+- Spreadsheet Data Processing
+- Automated Status Tracking
 
 ---
 
 ## Screenshots
 
-### EMAIL Execution Sheet
+### Existing Email Execution Process
+
+The existing automation retrieves supplier information from the **EMAIL Execution** sheet before sending sales report emails.
+
 ![EMAIL Execution](screenshots/email-execution-list.png)
 
-### Email Generation
+### Existing Email Distribution
+
+Supplier sales report emails are generated and sent through the existing automation.
+
 ![Email Generation](screenshots/email-output.png)
 
-### Summary Tracking
+### My Contribution: Automated Summary Tracking
+
+After each successful email, the corresponding supplier is automatically marked as **YES** in the **Summary** sheet, eliminating manual tracking.
+
 ![Summary Tracking](screenshots/summary.png)
+```
